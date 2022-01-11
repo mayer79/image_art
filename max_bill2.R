@@ -36,8 +36,8 @@ dat <- merge(colors, positions, by = "id")
 
 ggplot(dat, aes(x = x, y = y, fill = fill, group = id)) +
   geom_polygon() +
-  scale_fill_identity()+
-  coord_equal()+
+  scale_fill_identity() +
+  coord_equal() +
   theme_void()
 
-ggsave("max_bill2_from_r.svg")
+ggsave("max_bill2_from_r.jpg")
